@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'DinosaurThin';
+  src: url('/fonts/DinosaurThin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GandurLight';
+  src: url('/fonts/GandurLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InktrapLight';
+  src: url('/fonts/InktrapLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMono-Regular';
+  src: url('/fonts/RobotoMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoMono-Light';
+  src: url('/fonts/RobotoMono-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NeueHaas';
+  src: url('/fonts/NeueHaasPro95.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
