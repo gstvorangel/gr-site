@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import Work from "./pages/Work";
 
 const projects = [
@@ -28,12 +28,12 @@ function Home() {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: -30, opacity: 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className={`fixed top-0 left-0 w-full z-50 px-8 md:px-08 py-4 bg-transparent text-[#252422] text-lg md:text-xl transition-colors duration-300 ${showNav ? 'bg-white text-[#252422]' : ''}`}
+        className={`fixed top-0 left-0 w-full z-50 px-8 md:px-8 py-4 bg-transparent text-[#252422] text-lg md:text-xl transition-colors duration-300 ${showNav ? 'bg-white text-[#252422]' : ''}`}
       >
         <div className="flex items-center justify-between w-full">
-          <a href="/" className="text-lg font-black tracking-wide font-neuehaas">G_R</a>
+          <Link to="/" className="text-lg font-black tracking-wide font-neuehaas">G_R</Link>
           <div className="flex gap-x-10 text-sm md:text-base font-roboto-regular">
-            <a href="/work" className="hover:text-[#17e013] hover:underline transition-all duration-300">WORK</a>
+            <Link to="/work" className="hover:text-[#17e013] hover:underline transition-all duration-300">WORK</Link>
             <a href="#" className="hover:text-[#17e013] hover:underline transition-all duration-300">LAB</a>
             <a href="#" className="hover:text-[#17e013] hover:underline transition-all duration-300">ABOUT</a>
           </div>
@@ -99,13 +99,4 @@ function Home() {
   );
 }
 
-export default function AppWrapper() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work" element={<Work />} />
-      </Routes>
-    </Router>
-  );
-}
+export default Home;

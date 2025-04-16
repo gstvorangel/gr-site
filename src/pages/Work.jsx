@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const projects = Array.from({ length: 10 }, (_, i) => ({
   title: `Project ${i + 1}`,
@@ -28,9 +29,9 @@ export default function WorkPage() {
         className={`fixed top-0 left-0 w-full z-50 px-8 py-4 bg-white text-[#252422] text-lg md:text-xl border-b border-gray-300`}
       >
         <div className="flex items-center justify-between w-full">
-          <a href="/" className="text-lg font-black tracking-wide font-neuehaas">G_R</a>
+          <Link to="/" className="text-lg font-black tracking-wide font-neuehaas">G_R</Link>
           <div className="flex gap-x-10 text-sm md:text-base">
-            <a href="/work" className="hover:text-[#17e013] hover:underline transition-all duration-300">WORK</a>
+            <Link to="/work" className="hover:text-[#17e013] hover:underline transition-all duration-300">WORK</Link>
             <a href="#" className="hover:text-[#17e013] hover:underline transition-all duration-300">LAB</a>
             <a href="#" className="hover:text-[#17e013] hover:underline transition-all duration-300">ABOUT</a>
           </div>
